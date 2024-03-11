@@ -1,0 +1,125 @@
+.best-features > :nth-child(1) {
+  background-color: rgb(41, 104, 212);
+  padding: 5rem 2rem 5rem 2rem;
+}
+
+.best-features > :nth-child(1) > h2 {
+  color: #fff;
+  /* font-family: "Jost", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+
+  /* 130% */
+}
+
+.best-features > :nth-child(1) > p {
+  color: #96bece;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.best-features > :nth-child(1) > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.best-features > :nth-child(1) > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  width: 23%;
+}
+
+.best-features > :nth-child(1) > div > div > i {
+  padding: 20px;
+  background-color: #b1383d;
+  color: #fff;
+  clip-path: circle();
+  font-size: 2rem;
+}
+
+.best-features > :nth-child(1) > div > div > div > h3 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  /* 130% */
+}
+
+.best-features > :nth-child(1) > div > div > div > p {
+  color: #96bece;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .best-features > :nth-child(2) > img {
+  width: 100%;
+  height: 100%;
+} */
+@media (max-width: 920px) {
+  .best-features > :nth-child(1) > div {
+    /* padding: 5rem 1rem 5rem 1rem; */
+    flex-direction: column;
+  }
+
+  .best-features > :nth-child(1) > div > div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1175px) {
+  .best-features > :nth-child(1) > div > div {
+    width: 30%;
+  }
+}
+
+@media (max-width: 920px) {
+  .best-features > :nth-child(1) > div {
+    /* padding: 5rem 1rem 5rem 1rem; */
+    flex-direction: column;
+  }
+
+  .best-features > :nth-child(1) > div > div {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .best-features > :nth-child(1) > div {
+    /* padding: 5rem 1rem 5rem 1rem; */
+    flex-direction: column;
+  }
+
+  .best-features > :nth-child(1) > div > div {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* .feature {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s, transform 2s;
+}
+
+.feature.show {
+  opacity: 1;
+  transform: translateY(0);
+} */

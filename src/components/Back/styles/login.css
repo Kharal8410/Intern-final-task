@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #f7f5f5;
+  border-radius: 10px;
+}
+
+.container .logo {
+  border-right: 2px solid #a0a9b2;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.logo h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.piv-image {
+  margin-right: 20px;
+  width: 500px;
+}
+
+.login-box {
+  width: 500px;
+  padding: 45px 45px 45px 20px;
+  border-radius: 8px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.login-box label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.login-box .error-message {
+  color: rgb(233, 61, 61);
+}
+
+.login-box p {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 30px;
+}
+
+@media (max-width: 990px) {
+  .container {
+    /* padding: 20px; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .container .logo {
+    border-right: none;
+  }
+
+  .piv-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100%;
+  }
+
+  .login-box {
+    width: 100%;
+  }
+}

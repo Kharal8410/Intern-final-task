@@ -1,0 +1,163 @@
+#events {
+  padding: 100px 0 0;
+}
+
+.events .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.events .heading > span > p {
+  color: #b1383d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.events .heading > h2 {
+  color: #141b22;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(25px, 4vw + 1rem, 50px);
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.viewMoreBtn {
+  background-color: rgba(55, 107, 198, 1);
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.viewMoreBtn > a {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.viewMoreBtn:hover {
+  background-color: #b1383d;
+}
+
+.events-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(23rem, 100%), 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.events-card .image-container {
+  /* Set your desired height */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  /* Hide any overflowing parts of the image */
+  height: 300px;
+}
+
+.events-card .image-container > img {
+  width: 100%;
+  /* Make the image fill its container */
+  height: 100%;
+  /* Maintain aspect ratio */
+  transition: transform 0.7s ease;
+  object-fit: cover;
+  /* Add a smooth transition for scaling */
+}
+
+/* Define the hover effect */
+.events-card .image-container:hover img {
+  transform: scale(1.2);
+  /* Scale the image up to 120% of its original size on hover */
+}
+
+.events-card .image-container .date {
+  background-color: #b1383d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.events-card .image-container .date > b {
+  color: #fff;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.events-card .image-container .date > small {
+  color: #fff;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.events-card-content {
+  padding: 30px;
+  background-color: #f0f7ff;
+}
+
+.events-card-content > div > h2 {
+  color: #162542;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.events-card-content > div > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #777;
+  font-style: normal;
+  line-height: 1.25;
+  padding-block: 1rem;
+}
+
+.events-card-content > div > span {
+  gap: 5px;
+  padding-top: 1rem;
+}
+
+.events-card-content > div > span > :nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #777;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+.events-card-content > div > span > :nth-child(3) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #b1383d;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@media (max-width: 480px) {
+  .events-card-content > div > span {
+    flex-wrap: wrap;
+  }
+}
